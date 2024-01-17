@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transakcija"
+    android:background="#FFE5EF">
+
+
+    <TextView
+        android:id="@+id/prima"
+        android:text="Primatelji:"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@id/Primatelj"
+        android:layout_marginBottom="20dp"
+        android:background="#F38AFF"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Primatelj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:scrollbars="vertical"
+        android:background="#F38AFF"
+        />
+
+    <TextView
+        android:id="@+id/tra"
+        android:text="Transakcije:"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@id/transakcijee"
+        android:layout_marginBottom="20dp"
+        android:background="#F38AFF"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transakcijee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Primatelj"
+        android:layout_marginTop="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:scrollbars="vertical"
+        android:background="#F38AFF"
+        />
+
+    <DatePicker
+        android:id="@+id/datum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="10dp"
+        android:background="#FF59AF"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Prenesi"
+        android:text="Prenesi"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:background="#F957FF"
+        />
+
+    <EditText
+        android:id="@+id/iznos"
+        android:hint="Iznos novca"
+        android:textSize="20sp"
+        android:padding="11dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/datum"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="40dp"
+        android:background="#F957FF"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

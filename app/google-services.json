@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "204040042874",
+    "project_id": "firebaza-94a81",
+    "storage_bucket": "firebaza-94a81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204040042874:android:b6f412148beeb37f8d3ec3",
+        "android_client_info": {
+          "package_name": "hr.milinko.banka4pmu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpIyBbbGl9SfuM9rR02HXClsOYsRoIr_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
